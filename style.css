@@ -1,0 +1,76 @@
+/* GLOBAL PAGE */
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+/* IMAGE FIX — All images resized cleanly */
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: 0.35s ease; /* smooth animation for hover */
+  cursor: pointer;
+}
+
+/* EPIC HOVER EFFECT */
+img:hover {
+  transform: scale(1.12); /* zoom effect */
+  filter: drop-shadow(0 0 10px #00ff88);
+  opacity: 0.9;
+}
+
+/* LAYOUT */
+.box {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sides {
+  width: 25%;
+  height: 100%;
+  display: block;
+}
+
+.middle {
+  width: 50%;
+  height: 100%;
+  display: block;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* COLORS */
+.green {
+  background-color: #006437;
+}
+.red {
+  background-color: #fa0707;
+}
+.white {
+  background-color: #ffffff;
+}
+
+/* EXTRAS (not changed) */
+.translucent {
+  opacity: 0.5;
+}
+.gone {
+  display: none;
+}
+.invisible {
+  visibility: hidden;
+}
+
+h1 {
+  font-size: 100px;
+}
