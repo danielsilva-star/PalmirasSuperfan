@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your 1st JS!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Lado esquerdo -->
+    <div class="sides red">
+      <div class="box white">
+        <!-- SUPERIOR ESQUERDA → TOCA MÚSICA -->
+        <img
+          id="leftTopImage"
+          src="images/download-removebg-preview (7).png"
+          onclick="playMusic()"
+        />
+      </div>
+
+      <div class="box white">
+        <img src="images/Screenshot 2025-11-21 103541.png" />
+      </div>
+    </div>
+
+    <!-- MEIO -->
+    <div class="middle green center-content">
+      <img id="middleImage" src="images/palmeiras.png" />
+    </div>
+
+    <!-- Lado direito -->
+    <div class="sides white">
+      <div class="box white">
+        <!-- SUPERIOR DIREITA → GIF -->
+        <img
+          id="rightTopImage"
+          src="images/Screenshot 2025-11-21 103752.png"
+          onclick="showGif()"
+        />
+      </div>
+
+      <div class="box white">
+        <!-- INFERIOR DIREITA → DEIXAR TUDO IGUAL -->
+        <img
+          id="rightBottomImage"
+          src="images/Screenshot 2025-11-21 104501.png"
+          onclick="setAllImagesToRightTop()"
+        />
+      </div>
+    </div>
+
+    <audio
+      id="myMusic"
+      src="sounds/HINO DO PALMEIRAS.wav"
+      type="audio/wav"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
